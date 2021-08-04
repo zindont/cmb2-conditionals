@@ -39,6 +39,11 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+if (!function_exists('add_action')) {
+	// We are running outside of the context of WordPress.
+	return;
+}
+
 if ( ! class_exists( 'CMB2_Conditionals', false ) ) {
 
 	/**
